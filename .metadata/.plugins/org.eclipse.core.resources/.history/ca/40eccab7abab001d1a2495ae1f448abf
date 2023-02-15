@@ -1,0 +1,16 @@
+package testing;
+
+public class AnotherClass {
+	public int years = 25;
+	
+	public void hi(String name) {
+		System.out.println("Hello " + name);
+	}
+	public AnotherClass (String color) {
+		System.out.println("your color is " + color);
+	}
+	public AnotherClass () {
+		
+	}
+
+}

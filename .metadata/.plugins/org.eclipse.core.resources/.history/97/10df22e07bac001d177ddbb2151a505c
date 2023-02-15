@@ -1,0 +1,9 @@
+package testing;
+import java.lang.Math;
+import java.util.Scanner;
+
+public class Randomizer {
+	public static void Number() {
+		
+
+}

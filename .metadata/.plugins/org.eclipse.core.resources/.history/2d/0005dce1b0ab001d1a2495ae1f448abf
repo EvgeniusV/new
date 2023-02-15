@@ -1,0 +1,10 @@
+package testing;
+import java.lang.Math;
+
+public class Randomizer {
+	public static void Number() {
+		var nums = (int)(Math.random() * 100);
+		System.out.println(nums);
+	}
+
+}

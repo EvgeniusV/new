@@ -1,0 +1,12 @@
+package testing;
+import java.util.Random;
+
+public class Randomizer {
+	public static int Number() {
+		Random random = new Random();
+		var nums = 0;
+		var result = random.nums(1, 20);
+		return reulst;
+	}
+
+}

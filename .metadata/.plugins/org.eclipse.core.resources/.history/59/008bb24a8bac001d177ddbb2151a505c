@@ -1,0 +1,10 @@
+package testing;
+import java.util.Scanner;
+import java.lang.Math;
+public class Trying {
+	public static int evenCount() {
+		var count = 0;
+		
+	}
+
+}

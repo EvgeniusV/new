@@ -1,0 +1,14 @@
+package testing;
+
+
+public class App {
+
+	public static void main(String[] args) {
+		while(Randomizer.Number() != 3) {
+			Randomizer.Number();
+		}
+		
+
+	}
+
+}

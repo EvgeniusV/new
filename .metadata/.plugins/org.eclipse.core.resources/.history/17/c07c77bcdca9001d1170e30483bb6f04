@@ -1,0 +1,6 @@
+package testing;
+
+public class AnotherClass {
+	private int years = 25;
+
+}

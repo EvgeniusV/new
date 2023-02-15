@@ -1,0 +1,33 @@
+package testing;
+import java.lang.Math;
+import java.util.Scanner;
+
+public class Randomizer {
+	public static void number() {
+		Scanner scan = new Scanner(System.in);
+		var result = 0;
+		while(result < 3) {
+			var number = (int)(1 + Math.random() * 100);
+			var numberEven = number % 2 == 0;
+			System.out.println("Answer 'yes' if the numbers is even, outherwise answer 'no'.\n" + "Question: " + number);
+			var userChoice = scan.nextLine();
+			var rightAnswer = (userChoice.equals("yes") && numberEven == true) || (userChoice.equals("no") && numberEven == false);
+			if(rightAnswer) {
+				System.out.println("Correct");
+				result += 1;
+			}else if(userChoice.equals("yes") && numberEven == false) {
+				System.out.println("'yes' is wrong answer ;(. correct answer was 'no'\nLets try again!");
+				result = 0;
+			}else if(userChoice.equals("no") && numberEven == true) {
+				System.out.println("'no' is wrong answer ;(. correct answer was 'yes'\nLets try again!");
+				result = 0;
+			}else {
+				System.out.println("Incorrect input, please try again!");
+			}
+			if(result == 3) {
+				scan.close();
+			}
+		}
+	}
+}
+

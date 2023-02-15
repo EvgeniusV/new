@@ -1,0 +1,12 @@
+package testing;
+
+public class App {
+
+	public static void main(String[] args) {
+		AnotherClass man = new AnotherClass();
+		System.out.println(man.years);
+		AnotheClass woman = new AnotherClass();
+		woman.say("mark");
+	}
+
+}

@@ -1,0 +1,14 @@
+package testing;
+import java.lang.Math;
+import java.util.Scanner;
+
+public class Randomizer {
+	public static void Number() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Hello, please answer for question"
+				+ "Answer 'yes' if the nymber is even, outherwise answer 'no'.");
+		var nums = (int)(Math.random() * 100);
+		System.out.println(nums);
+	}
+
+}
