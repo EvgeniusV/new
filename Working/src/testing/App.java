@@ -8,7 +8,7 @@ public class App {
 		Scanner scan = new Scanner(System.in);
 		var userChoice = 0;
 		System.out.println("Please enter the game number and press Enter.");
-		System.out.println("1 - Greet\n2 - Even\n0 - Exit");
+		System.out.println("1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n0 - Exit");
 		if(scan.hasNextInt()) {
 			userChoice = scan.nextInt();
 		}else {
@@ -23,6 +23,14 @@ public class App {
 		case 2 :
 			Greeting.Hello();
 			Randomizer.number();
+			break;
+		case 3:
+			Greeting.Hello();
+			Calc.Calculator();
+			break;
+		case 4:
+			Greeting.Hello();
+			Nod.nod();
 			break;
 		}
 	}

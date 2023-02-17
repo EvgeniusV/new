@@ -26,7 +26,6 @@ public class Randomizer {
 			}
 			if(result == 3) {
 				System.out.println("Congratulations, ");
-				scan.close();
 			}
 		}
 	}
