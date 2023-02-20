@@ -25,6 +25,7 @@ public class Even {
 			result += 1;
 		}else {
 			System.out.println("'" + userChoice + "'" + "is wrong answer ;(. Correct answer was " + correctAnswer);
+			System.out.println("Lets Try again!");
 			result = 0;
 		}
 		if(result == 3) {
