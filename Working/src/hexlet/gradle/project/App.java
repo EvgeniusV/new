@@ -6,7 +6,8 @@ public class App {
 		Scanner scan = new Scanner(System.in);
 		int userChoice = 0;
 		System.out.println("Please enter the game number and press Enter.\n"
-				+ "1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Proggression");
+				+ "1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Proggression\n"
+				+ "6 - Prime\n0 - Exit");
 		if(scan.hasNextInt()) {
 			userChoice = scan.nextInt();
 			if(userChoice <= 7 && userChoice > 0) {
@@ -42,6 +43,13 @@ public class App {
 				Greeting.hello();
 				Progression.progresNums();
 				break;
+			case 6:
+				Greeting.hello();
+				Prime.primeNums();
+				break;
+			case 0:
+				System.out.println("Good Bye!");
+				return;
 		}
 		
 		
